@@ -20,9 +20,9 @@ const App = observer(() => {
 
       <div className={cl.Content}>
         <NumForm keys={["firstCurrencie", "num"]} />
-        <div className={cl.Swap} onClick={swapCurrencies}>
+        {/* <div className={cl.Swap} onClick={swapCurrencies}>
           Swap
-        </div>
+        </div> */}
         <NumForm keys={["secondCurrencie"]} disabled={true} />
       </div>
     </div>

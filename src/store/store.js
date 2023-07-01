@@ -8,7 +8,7 @@ class Store {
   isLoading = true;
 
   selectedCurrencies = {
-    exchangeRate: NaN,
+    exchangeRate: 0,
     num: NaN,
     firstCurrencie: undefined,
     secondCurrencie: undefined,
@@ -56,7 +56,7 @@ class Store {
     };
 
     this.selectedCurrencies[key] = data;
-    console.log(toJS(this.selectedCurrencies));
+    // console.log(toJS(this.selectedCurrencies));
 
     if (Object.keys(this.selectedCurrencies).length === 4) fetchExchangeRate();
   }
@@ -77,7 +77,7 @@ class Store {
       this.selectedCurrencies.secondCurrencie
     );
 
-    console.log(toJS(this.selectedCurrencies));
+    // console.log(toJS(this.selectedCurrencies));
   }
 }
 
